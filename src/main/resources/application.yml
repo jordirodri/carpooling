@@ -1,0 +1,22 @@
+server.port: 9091
+
+logging:
+  level:
+#    io.netty: error
+#    reactor.netty.http: trace
+#    org.springframework.data.r2dbc: DEBUG
+#    org.springframework.r2dbc: DEBUG
+#    io.r2dbc: DEBUG
+#    com.h2database: DEBUG
+    org.cabify.carpooling: DEBUG
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:mydb
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+  h2:
+    console:
+      enabled: true
+
